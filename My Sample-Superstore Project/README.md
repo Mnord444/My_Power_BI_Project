@@ -97,21 +97,31 @@ These steps directly supported the design of a star schema by establishing a cle
 ![10  Star Schema](https://github.com/user-attachments/assets/8882680f-b46d-4429-8fd0-03f6886e2f8f)  
 
 
-## Power BI Dashboard Overview  
-This dashboard was designed to provide insights into sales revenue trends for the year 2020 thru 2023, with dynamic filtering by category, month, and year.  
+## Power BI Report Overview  
+This report was designed to provide insights into sales revenue trends for the year 2020 thru 2023, with dynamic filtering by category, month, and year.  
+![1   Report](https://github.com/user-attachments/assets/e237121d-5340-43e6-bc63-8c58c9df630f)
 
-### Key features include:  
-1. High-Level Metrics:
- - High-Level Metrics:- Total Sales: Shows $237,420, with a positive trend (+127.5%) compared to the previous month.
+
+## Key features include:  
+### 1. High-Level Metrics:
+- High-Level Metrics:- Total Sales: Shows $237,420, with a positive trend (+127.5%) compared to the previous month.
 - Average Sale: Highlights an average value of $1,457, demonstrating spending trends.
 - Total Orders: Displays 163 orders, using an upward arrow for visual emphasis on growth.
 
-- Interactive Elements:- Filters for months and years allow users to adjust the view dynamically, focusing on specific time periods.
+### 2. Interactive Elements:  
+- Filters for months and years allow users to adjust the view dynamically, focusing on specific time periods.
 - Visual alignment and drill-down capabilities make it easy to explore deeper insights.
 
-- Key Visuals and DAX Examples:- A Bar Chart breaks down sales by category—Technology, Office Supplies, and Furniture—to help identify top-performing segments.
-- The DAX Measures used include:- Month-over-Month Sales Growth: Calculated to visualize sales trends effectively.
-- Dynamic Unicode Indicators: Used to display arrows for quick visual cues of growth trends.
+### 3. Key Visuals:  
+- Rounded-Edge Bar Chart Using Deneb: To enhance the visual design of my Power BI report, I implemented a custom bar chart using an add-on called Deneb, which leverages Vega-Lite (Jason). Unlike native Power BI visuals, this approach allowed me to create a bar chart with rounded edges, adding a sleek and modern touch to the visualization.
+
+![2  Deneb_Barchart](https://github.com/user-attachments/assets/1642ccc5-d3e9-4ece-a6aa-929a723cc88f)  
+
+- Total Sales Card: One of the highlights of this report is the Total Sales Card which not only displays the overall sales amount but also includes interactive buttons. These buttons allow users to toggle views and compare Total sales vs Previous Month, and Total Profit.
+
+![Card_Anima](https://github.com/user-attachments/assets/25436a0d-61ee-4bb3-9847-74a71dace1de)
+
+
 
 
 
