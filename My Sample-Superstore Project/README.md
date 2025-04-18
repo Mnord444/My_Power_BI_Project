@@ -160,15 +160,64 @@ VAR _sign = IF( _var > 0, "+", "")
 RETURN
 _sign & FORMAT(_pct, "#0.0%") & " | " & _sign & FORMAT( _var, "#0,#" )
 ```
-Measure Logic:  
+**Measure Logic:**  
 - `_var:` Calculates the difference between current Total Sales and Previous Month Sales.  
 - `_pct:` Computes the percentage growth using the DIVIDE function.  
 - `_sign:` Adds a "+" for positive growth or no sign for negative or zero values.  
 Return Statement: Combines the sign, percentage change, and absolute difference into a single formatted string for display.
 
-Field Parameters and Slicer Integration:  
+**Field Parameters and Slicer Integration:**  
 - These measures were added to a field parameter, enabling the user to toggle between different comparative metrics (e.g., vs Previous Month and vs Total Profit).  
-- A slicer was added to the report, allowing users to dynamically switch between these views, making the report more interactive and user-centric.
+- A slicer was added to the report, allowing users to dynamically switch between these views, making the report more interactive and user-centric.  
+
+**Impact:**  
+- This feature provides users with quick insights into sales performance trends and profitability in a visually intuitive way.  
+- The use of conditional logic and formatting underscores the interactivity and functionality of the report.
+
+### KPI Card: Conditional Formatting for Dynamic Color Indicators  
+To provide visual cues for performance trends on the KPI Card, I created a custom DAX measure to dynamically assign colors (Green, Red, and Black) based on comparisons of key metrics.  
+**DAX Formula:**  
+```
+KPI Color = 
+VAR _sel = SELECTEDVALUE(Comparisons[Comparisons Fields])
+VAR _var = SWITCH(
+    TRUE()
+    , CONTAINSSTRING(_sel, "Previous Month"), [Total Sales] - [Previous Month Sales]
+    , CONTAINSSTRING(_sel, "Total Profit"), [Total Sales] - [Total Profit]
+)
+RETURN
+SWITCH(
+    TRUE()
+    , _var > 0, "Green"
+    , _var < 0, "Red"
+    , "Black"
+)
+```
+**Explanation:**
+- `_sel:` Retrieves the selected comparison field (e.g., Previous Month or Total Profit) based on the slicer input.  
+- `_var:` Determines the performance difference by calculating the variance between Total Sales and the selected comparison metric.  
+**Return Statement:** Assigns a color based on the sign of the variance:- Green: Positive growth.  
+- Red: Negative growth.  
+- Black: Neutral or zero growth.
+
+## Conclusion
+This Power BI project exemplifies my ability to transform raw data into actionable insights through a combination of advanced data modeling techniques, interactive visualizations, and thoughtful design. Leveraging tools such as Power Query, Deneb, and DAX, I created a dynamic and user-friendly dashboard that highlights key metrics and trends while maintaining optimal performance and visual appeal.  
+
+Through this project, I demonstrated technical proficiency in implementing star schema data models, customizing visuals beyond Power BI’s native capabilities, and developing dynamic measures to enhance interactivity. The addition of features like conditional formatting, field parameters, and slicer integration further underscores my commitment to creating intuitive and impactful solutions.
+This report serves as a showcase of my analytical skills, creativity, and ability to address real-world business needs through data visualization.  
+
+I hope this project provides potential employers with a clear understanding of my expertise and approach to delivering high-quality work.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
