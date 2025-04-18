@@ -94,5 +94,29 @@ The results can now be integrated into your solution.  For example, you may add 
 
 These steps directly supported the design of a star schema by establishing a clean, well-structured dataset, with a centralized fact table connected to multiple dimension tables. This structure laid the groundwork for efficient querying and analysis within Power BI, ensuring faster performance and a user-friendly dashboard experience.  
 
-![10  Star Schema](https://github.com/user-attachments/assets/8882680f-b46d-4429-8fd0-03f6886e2f8f)
+![10  Star Schema](https://github.com/user-attachments/assets/8882680f-b46d-4429-8fd0-03f6886e2f8f)  
+
+
+## Power BI Dashboard Overview  
+This dashboard was designed to provide insights into sales revenue trends for the year 2020 thru 2023, with dynamic filtering by category, month, and year.  
+
+### Key features include:  
+1. High-Level Metrics:
+ - High-Level Metrics:- Total Sales: Shows $237,420, with a positive trend (+127.5%) compared to the previous month.
+- Average Sale: Highlights an average value of $1,457, demonstrating spending trends.
+- Total Orders: Displays 163 orders, using an upward arrow for visual emphasis on growth.
+
+- Interactive Elements:- Filters for months and years allow users to adjust the view dynamically, focusing on specific time periods.
+- Visual alignment and drill-down capabilities make it easy to explore deeper insights.
+
+- Key Visuals and DAX Examples:- A Bar Chart breaks down sales by category—Technology, Office Supplies, and Furniture—to help identify top-performing segments.
+- The DAX Measures used include:- Month-over-Month Sales Growth: Calculated to visualize sales trends effectively.
+- Dynamic Unicode Indicators: Used to display arrows for quick visual cues of growth trends.
+
+
+
+
+
+
+
 
