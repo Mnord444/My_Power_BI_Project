@@ -10,5 +10,5 @@ The report is divided into two key sections:
 Power Query  
 Power BI Desktop  
 Kaggle - My Superstore Data Set   
-![Power_BI_Anima_Gif](https://github.com/user-attachments/assets/c97191e1-e109-44ba-b2f1-85d48df544d2)  
+![Power_BI_Report](https://github.com/user-attachments/assets/973543fd-6c8a-4d2c-a66b-e668e8e75cd3)  
 [Check Out My Work Here](https://github.com/Mnord444/My_Power_BI_Project/tree/main/My%20Sample-Superstore%20Project)
